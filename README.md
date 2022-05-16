@@ -17,6 +17,7 @@ Game where you take turns with a computer taking marbles out of a bag in exact i
 # Known Bugs
 - Rules window lacking information
 - Jpeg will be replaced eventually
+- Some labels did not scale down well in Gitpod so the text is slightly cut off
 
 # Hints
 - This game is inspired from an old toy called Dr. Nim
