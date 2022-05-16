@@ -299,7 +299,7 @@ class MarbleGame(QtWidgets.QMainWindow):
         self.picture = QtWidgets.QLabel(self.groupBox)
         self.picture.setGeometry(QtCore.QRect(150, 320, 121, 151))
         self.picture.setText("")
-        self.picture.setPixmap(QtGui.QPixmap("images/marble-jar.jpg"))
+        self.picture.setPixmap(QtGui.QPixmap("imgs/marble-jar.jpg"))
         self.picture.setScaledContents(True)
         self.picture.setObjectName("picture")
 
