@@ -2,20 +2,23 @@
 Game where you take turns with a computer taking marbles out of a bag in exact increments of 1, 3, or 4 marbles. The player to remove the last marble wins
 
 # Setup Instructions
-- Method 1: Download an IDE of your choice and run marble_game.py
+- Method 1: With an IDE of your choice and run marble_game.py
 
 - Method 2: Click on the Gitpod icon below and wait until the virtual desktop opens the file for you
+
+# Requirements
+- PyQt5
 
 # Game Instructions
 - First set the game settings. Select whether you want to a randomized amount of beginning marbles in the bag or if you want to choose yourself. Then choose whether you want to make the first move. Click confirm to save your settings and click start to begin the game.
 - You can choose how many marbles you want to take out by clicking the buttons 1, 3, or 4 at the top right of the window. 
 - The restart button will restart the current active game and the settings button will allow you to go back to the settings box. Also, you can reset the win/lose counter and it will be reset automatically upon closing the window
 
-# Known Bugs:
+# Known Bugs
 - Rules window lacking information
 - Jpeg will be replaced eventually
 
-# Hint
+# Hints
 - This game is inspired from an old toy called Dr. Nim
 - Once you figure out the algorithm, you can win the game every time. Otherwise, you will lose almost every time (unless you're lucky)
 - The first move is the most important
@@ -23,4 +26,4 @@ Game where you take turns with a computer taking marbles out of a bag in exact i
 
 # Run in Gitpod
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://jwong236-marblegame-wn2c7sd144x.ws-us45.gitpod.io/)
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/jwong236/Marble-Game)
