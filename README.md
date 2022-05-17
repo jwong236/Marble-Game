@@ -1,6 +1,8 @@
 # Marble-Game
 Game where you take turns with a computer taking marbles out of a bag in exact increments of 1, 3, or 4 marbles. The player to remove the last marble wins
 
+This project is my first project with the goal of learning and practicing PyQt5 and Github
+
 # Setup Instructions
 - Method 1: With an IDE of your choice and run marble_game.py
 
@@ -10,7 +12,7 @@ Game where you take turns with a computer taking marbles out of a bag in exact i
 - PyQt5
 
 # Game Instructions
-- First set the game settings. Select whether you want to a randomized amount of beginning marbles in the bag or if you want to choose yourself. Then choose whether you want to make the first move. Click confirm to save your settings and click start to begin the game.
+- First set the game settings. Select whether you want a randomized amount of beginning marbles in the bag or if you want to choose yourself. Then choose whether you want to make the first move. Click confirm to save your settings and click start to begin the game.
 - You can choose how many marbles you want to take out by clicking the buttons 1, 3, or 4 at the top right of the window. 
 - The restart button will restart the current active game and the settings button will allow you to go back to the settings box. Also, you can reset the win/lose counter and it will be reset automatically upon closing the window
 

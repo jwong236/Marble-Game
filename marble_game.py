@@ -2,6 +2,7 @@
 
 from PyQt5 import QtCore, QtGui, QtWidgets
 from PyQt5.QtWidgets import QDialog
+import qdarkstyle
 import random
 
 class MarbleGame(QtWidgets.QMainWindow):
@@ -45,7 +46,7 @@ class MarbleGame(QtWidgets.QMainWindow):
 
 
         self.sLabel3 = QtWidgets.QLabel(self.setupGroupBox)
-        self.sLabel3.setGeometry(QtCore.QRect(40, 110, 70, 19))
+        self.sLabel3.setGeometry(QtCore.QRect(40, 110, 90, 19))
         font = QtGui.QFont()
         font.setFamily("Rockwell")
         font.setPointSize(12)
@@ -54,7 +55,7 @@ class MarbleGame(QtWidgets.QMainWindow):
 
 
         self.sLabel1 = QtWidgets.QLabel(self.setupGroupBox)
-        self.sLabel1.setGeometry(QtCore.QRect(10, 10, 128, 19))
+        self.sLabel1.setGeometry(QtCore.QRect(10, 10, 140, 19))
         font = QtGui.QFont()
         font.setFamily("Rockwell")
         font.setPointSize(12)
@@ -82,7 +83,7 @@ class MarbleGame(QtWidgets.QMainWindow):
 
 
         self.sLabel4 = QtWidgets.QLabel(self.setupGroupBox)
-        self.sLabel4.setGeometry(QtCore.QRect(40, 210, 60, 19))
+        self.sLabel4.setGeometry(QtCore.QRect(40, 210, 80, 19))
         font = QtGui.QFont()
         font.setFamily("Rockwell")
         font.setPointSize(12)
@@ -91,43 +92,33 @@ class MarbleGame(QtWidgets.QMainWindow):
 
 
         self.frame = QtWidgets.QFrame(self.setupGroupBox)
-        self.frame.setGeometry(QtCore.QRect(0, 30, 151, 71))
-        self.frame.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame.setGeometry(QtCore.QRect(10, 30, 131, 71))
+        self.frame.setFrameShape(QtWidgets.QFrame.NoFrame)
         self.frame.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame.setObjectName("frame")
 
 
         self.sRadioButton1 = QtWidgets.QRadioButton(self.frame)
-        self.sRadioButton1.setGeometry(QtCore.QRect(10, 10, 16, 17))
+        self.sRadioButton1.setGeometry(QtCore.QRect(0, 10, 16, 17))
         self.sRadioButton1.setText("")
         self.sRadioButton1.setObjectName("sRadioButton1")
 
         
         self.sComboBox = QtWidgets.QComboBox(self.frame)
         self.sComboBox.setEnabled(True)
-        self.sComboBox.setGeometry(QtCore.QRect(30, 40, 111, 21))
+        self.sComboBox.setGeometry(QtCore.QRect(20, 40, 111, 21))
         font = QtGui.QFont()
         font.setFamily("Rockwell")
         font.setPointSize(10)
         self.sComboBox.setFont(font)
         self.sComboBox.setObjectName("sComboBox")
-        self.sComboBox.addItem("")
-        self.sComboBox.addItem("")
-        self.sComboBox.addItem("")
-        self.sComboBox.addItem("")
-        self.sComboBox.addItem("")
-        self.sComboBox.addItem("")
-        self.sComboBox.addItem("")
-        self.sComboBox.addItem("")
-        self.sComboBox.addItem("")
-        self.sComboBox.addItem("")
-        self.sComboBox.addItem("")
-        self.sComboBox.addItem("")
+        for i in range(12):
+            self.sComboBox.addItem("")
 
 
         self.sPushButton1 = QtWidgets.QPushButton(self.frame)
         self.sPushButton1.setEnabled(True)
-        self.sPushButton1.setGeometry(QtCore.QRect(30, 10, 81, 21))
+        self.sPushButton1.setGeometry(QtCore.QRect(20, 10, 81, 21))
         font = QtGui.QFont()
         font.setFamily("Rockwell")
         font.setPointSize(10)
@@ -136,7 +127,7 @@ class MarbleGame(QtWidgets.QMainWindow):
 
 
         self.sLabel2 = QtWidgets.QLabel(self.frame)
-        self.sLabel2.setGeometry(QtCore.QRect(120, 10, 21, 21))
+        self.sLabel2.setGeometry(QtCore.QRect(110, 10, 21, 21))
         font = QtGui.QFont()
         font.setFamily("Rockwell")
         font.setPointSize(10)
@@ -146,25 +137,25 @@ class MarbleGame(QtWidgets.QMainWindow):
 
 
         self.sRadioButton2 = QtWidgets.QRadioButton(self.frame)
-        self.sRadioButton2.setGeometry(QtCore.QRect(10, 40, 16, 17))
+        self.sRadioButton2.setGeometry(QtCore.QRect(0, 40, 16, 17))
         self.sRadioButton2.setText("")
         self.sRadioButton2.setObjectName("sRadioButton2")
 
 
         self.frame_2 = QtWidgets.QFrame(self.setupGroupBox)
-        self.frame_2.setGeometry(QtCore.QRect(0, 130, 151, 41))
-        self.frame_2.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_2.setGeometry(QtCore.QRect(10, 130, 131, 41))
+        self.frame_2.setFrameShape(QtWidgets.QFrame.NoFrame)
         self.frame_2.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame_2.setObjectName("frame_2")
 
 
         self.sRadioButton4 = QtWidgets.QRadioButton(self.frame_2)
-        self.sRadioButton4.setGeometry(QtCore.QRect(10, 20, 118, 22))
+        self.sRadioButton4.setGeometry(QtCore.QRect(0, 20, 118, 22))
         self.sRadioButton4.setObjectName("sRadioButton4")
 
 
         self.sRadioButton3 = QtWidgets.QRadioButton(self.frame_2)
-        self.sRadioButton3.setGeometry(QtCore.QRect(10, 0, 93, 21))
+        self.sRadioButton3.setGeometry(QtCore.QRect(0, 0, 93, 21))
         self.sRadioButton3.setObjectName("sRadioButton3")
 
 
@@ -200,7 +191,7 @@ class MarbleGame(QtWidgets.QMainWindow):
 
 
         self.Title = QtWidgets.QLabel(self)
-        self.Title.setGeometry(QtCore.QRect(170, 20, 170, 31))
+        self.Title.setGeometry(QtCore.QRect(170, 20, 190, 31))
         font = QtGui.QFont()
         font.setFamily("Rockwell")
         font.setPointSize(20)
@@ -220,7 +211,7 @@ class MarbleGame(QtWidgets.QMainWindow):
 
 
         self.gLabel1 = QtWidgets.QLabel(self.groupBox)
-        self.gLabel1.setGeometry(QtCore.QRect(20, 10, 90, 19))
+        self.gLabel1.setGeometry(QtCore.QRect(20, 10, 110, 19))
         font = QtGui.QFont()
         font.setFamily("Rockwell")
         font.setPointSize(12)
@@ -240,7 +231,7 @@ class MarbleGame(QtWidgets.QMainWindow):
 
 
         self.gLabel4 = QtWidgets.QLabel(self.groupBox)
-        self.gLabel4.setGeometry(QtCore.QRect(20, 110, 57, 19))
+        self.gLabel4.setGeometry(QtCore.QRect(20, 110, 80, 19))
         font = QtGui.QFont()
         font.setFamily("Rockwell")
         font.setPointSize(12)
@@ -265,7 +256,7 @@ class MarbleGame(QtWidgets.QMainWindow):
 
 
         self.gLabel3 = QtWidgets.QLabel(self.groupBox)
-        self.gLabel3.setGeometry(QtCore.QRect(20, 40, 167, 19))
+        self.gLabel3.setGeometry(QtCore.QRect(20, 40, 180, 19))
         font = QtGui.QFont()
         font.setFamily("Rockwell")
         font.setPointSize(12)
@@ -279,7 +270,7 @@ class MarbleGame(QtWidgets.QMainWindow):
 
 
         self.gLabel2 = QtWidgets.QLabel(self.groupBox)
-        self.gLabel2.setGeometry(QtCore.QRect(140, 10, 61, 19))
+        self.gLabel2.setGeometry(QtCore.QRect(140, 10, 71, 25))
         font = QtGui.QFont()
         font.setFamily("Rockwell")
         font.setPointSize(12)
@@ -288,7 +279,7 @@ class MarbleGame(QtWidgets.QMainWindow):
 
 
         self.gLabel5 = QtWidgets.QLabel(self.groupBox)
-        self.gLabel5.setGeometry(QtCore.QRect(150, 110, 80, 19))
+        self.gLabel5.setGeometry(QtCore.QRect(150, 110, 100, 19))
         font = QtGui.QFont()
         font.setFamily("Rockwell")
         font.setPointSize(12)
@@ -309,8 +300,10 @@ class MarbleGame(QtWidgets.QMainWindow):
         self.gPushButton2.setObjectName("gPushButton2")
 
 
+
         for i in self.groupBox.children():
                 i.setEnabled(False)
+
 
 
         self.statusbar = QtWidgets.QStatusBar(self)
@@ -328,17 +321,17 @@ class MarbleGame(QtWidgets.QMainWindow):
         self.sPushButton3.setText(_translate("MainWindow", "Reset Counter"))
         self.sLabel4.setText(_translate("MainWindow", "Counter"))
         self.sComboBox.setItemText(0, _translate("MainWindow", "Choose"))
-        self.sComboBox.setItemText(1, _translate("MainWindow", "20"))
-        self.sComboBox.setItemText(2, _translate("MainWindow", "21"))
-        self.sComboBox.setItemText(3, _translate("MainWindow", "22"))
-        self.sComboBox.setItemText(4, _translate("MainWindow", "23"))
-        self.sComboBox.setItemText(5, _translate("MainWindow", "24"))
-        self.sComboBox.setItemText(6, _translate("MainWindow", "25"))
-        self.sComboBox.setItemText(7, _translate("MainWindow", "26"))
-        self.sComboBox.setItemText(8, _translate("MainWindow", "27"))
-        self.sComboBox.setItemText(9, _translate("MainWindow", "28"))
-        self.sComboBox.setItemText(10, _translate("MainWindow", "29"))
-        self.sComboBox.setItemText(11, _translate("MainWindow", "30"))
+        self.sComboBox.setItemText(1, _translate("MainWindow", "30"))
+        self.sComboBox.setItemText(2, _translate("MainWindow", "31"))
+        self.sComboBox.setItemText(3, _translate("MainWindow", "32"))
+        self.sComboBox.setItemText(4, _translate("MainWindow", "33"))
+        self.sComboBox.setItemText(5, _translate("MainWindow", "34"))
+        self.sComboBox.setItemText(6, _translate("MainWindow", "35"))
+        self.sComboBox.setItemText(7, _translate("MainWindow", "36"))
+        self.sComboBox.setItemText(8, _translate("MainWindow", "37"))
+        self.sComboBox.setItemText(9, _translate("MainWindow", "38"))
+        self.sComboBox.setItemText(10, _translate("MainWindow", "39"))
+        self.sComboBox.setItemText(11, _translate("MainWindow", "40"))
         self.sPushButton1.setText(_translate("MainWindow", "Randomize"))
         self.sLabel2.setText(_translate("MainWindow", "..."))
         self.sRadioButton4.setText(_translate("MainWindow", "Computer Starts"))
@@ -398,7 +391,7 @@ class MarbleGame(QtWidgets.QMainWindow):
     
     def sPushButton1_onPressed(self):
         # Randomize push button
-        choices = [20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30]
+        choices = range(30, 61)
         self.sLabel2.setText(str(random.choice(choices)))
         self.sRadioButton1.setChecked(True)
 
@@ -586,17 +579,22 @@ class RulesWindow(QDialog):
     def retranslateUi(self):
         _translate = QtCore.QCoreApplication.translate
         self.setWindowTitle(_translate("Dialog", "Rules"))
-        self.plainTextEdit.setPlainText(_translate("Dialog", "Take turns with a computer taking marbles out of a bag in amounts of 1, 3, or 4. The goal of the game is to take out the last marble. \n"
+        self.plainTextEdit.setPlainText(_translate("Dialog", "Take turns with a computer taking marbles out of a bag in amounts of 1, 3, or 4. The player who takes out the last marble in the bag wins \n"
 "\n"
-"This game is designed so that the computer will always win against a player with no strategy, and will always lose against  a player with a strategy\n"
+"First set the game settings. Select whether you want a randomized amount of beginning marbles in the bag or if you want to choose yourself. Then choose whether you want to make the first move. Click confirm to save your settings and click start to begin the game.\n"
 "\n"
-"First select a starting amount of marbles in the bag, with the option of a randomized amount of marbles between 20-30 or player\'s choice between 20-30. Then choose whether the computer takes the first turn. Clicking confirm will start the game with the set settings"))
+"You can choose how many marbles you want to take out by clicking the buttons 1, 3, or 4 at the top right of the window.\n"
+"\n"
+"The restart button will restart the current active game and the settings button will allow you to go back to the settings box. Also, you can reset the win/lose counter and it will be reset automatically upon closing the window\n"
+))
+
+
 
 
 if __name__ == "__main__":
     import sys
     app = QtWidgets.QApplication(sys.argv)
-
+    app.setStyleSheet(qdarkstyle.load_stylesheet())
     window = MarbleGame()
     
     sys.exit(app.exec_())
