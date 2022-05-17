@@ -17,7 +17,6 @@ This project is my first project with the goal of learning and practicing PyQt5 
 - The restart button will restart the current active game and the settings button will allow you to go back to the settings box. Also, you can reset the win/lose counter and it will be reset automatically upon closing the window
 
 # Known Bugs
-- Rules window lacking information
 - Jpeg will be replaced eventually
 - Some labels did not scale down well in Gitpod so the text is slightly cut off
 
