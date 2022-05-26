@@ -4,7 +4,7 @@ Game where you take turns with a computer taking marbles out of a bag in exact i
 This project is my first project with the goal of learning and practicing PyQt5 and Github
 
 # Setup Instructions
-- Method 1: With an IDE of your choice and run marble_game.py
+- Method 1: With an IDE of your choice, run marble_game.py
 
 - Method 2: Click on the Gitpod icon below and wait until the virtual desktop opens the file for you
 
@@ -19,6 +19,7 @@ This project is my first project with the goal of learning and practicing PyQt5 
 # Known Bugs
 - Jpeg will be replaced eventually
 - Some labels did not scale down well in Gitpod so the text is slightly cut off
+- Dark theme makes buttons state hard to see (I will eventually add an button option to change themes)
 
 # Hints
 - This game is inspired from an old toy called Dr. Nim
